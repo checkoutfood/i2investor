@@ -27,9 +27,12 @@ mongoose.connect("mongodb+srv://checkoutfood:checkoutfood123@cluster0-5ffrd.mong
 
 // middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:4200' })); // Allows cross origin in development only
 app.use(passport.initialize());
 app.use('/api', rtsIndex);
+app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
+app.use(bodyParser.json()); // parse application/json
+app.use(express.static(__dirname + '/public')); // Provide static directory for frontend
 
 // error handler
 app.use((err, req, res, next) => {
@@ -41,6 +44,9 @@ app.use((err, req, res, next) => {
     else{
         console.log(err);
     }
+});
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 // start server
