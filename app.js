@@ -31,7 +31,6 @@ mongoose.connect('mongodb+srv://checkoutfood:checkoutfood123@cluster0-5ffrd.mong
 app.use(cors({ origin: 'http://localhost:4200' })); // Allows cross origin in development only
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/public')); // Provide static directory for frontend
 app.use(passport.initialize());
 app.use('/api', rtsIndex);
 
@@ -47,8 +46,11 @@ app.use('/api', rtsIndex);
 //         console.log(err);
 //     }
 // });
+
+//app.use(express.static(__dirname + '/public')); // Provide static directory for frontend
+
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/public/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/Angular6/index.html'));
 });
 
 // start server
