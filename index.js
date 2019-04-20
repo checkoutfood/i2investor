@@ -9,7 +9,7 @@ const passport = require('passport');
 const mongoose = require('mongoose'); // Node Tool for MongoDB
 
 const rtsIndex = require('./routes/index.router');
-
+const config = require('./config/database'); // Mongoose Config
 var app = express();
 
 mongoose.connect("mongodb+srv://checkoutfood:checkoutfood123@cluster0-5ffrd.mongodb.net/test?retryWrites=true", {
