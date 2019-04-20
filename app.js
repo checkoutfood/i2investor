@@ -8,7 +8,7 @@ const mongoose = require('mongoose'); // Node Tool for MongoDB
 const config = require('./config/database'); // Mongoose Config
 const cors = require('cors'); // CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 const port = process.env.PORT || 8080; // Allows heroku to set port
-
+const path = require('path'); // NodeJS Package for file paths
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const env = require('./env');
