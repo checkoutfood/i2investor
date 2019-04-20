@@ -1,4 +1,4 @@
-//require('./config/config');
+require('./config/config');
 require('./models/db');
 require('./config/passportConfig');
 
@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose'); // Node Tool for MongoDB
+const env = require('./env');
 
 const rtsIndex = require('./routes/index.router');
 
