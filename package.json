@@ -7,6 +7,10 @@
     "start": "node app.js",
     "build": "cd client && ng build --prod --env=prod"
   },
+  "engines": {
+    "node": "^11.10.1",
+    "npm": "^6.7.0"
+  },
   "author": "Chocks",
   "license": "ISC",
   "dependencies": {
