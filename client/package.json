@@ -7,9 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "preinstall": "npm install -g angular-cli"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^0.13.8",
     "@angular/animations": "^6.0.0",
