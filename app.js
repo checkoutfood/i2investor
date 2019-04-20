@@ -47,10 +47,10 @@ app.use('/api', rtsIndex);
 //     }
 // });
 
-app.use(express.static(__dirname + '/public')); // Provide static directory for frontend
+app.use(express.static(__dirname + '/client/dist/client')); // Provide static directory for frontend
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/public/index.html'));
+  res.sendFile(path.join(__dirname + '/client/dist/client/index.html'));
 });
 
 // start server
