@@ -1,4 +1,4 @@
-require('./config/config');
+//require('./config/config');
 require('./models/db');
 require('./config/passportConfig');
 
@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://checkoutfood:checkoutfood123@cluster0-5ffrd.mong
   if (err) {
     console.log('Could NOT connect to database: ', err); // Return error message
   } else {
-    console.log('Connected to ' + config.db); // Return success message
+    console.log('Connected to db'); // Return success message
   }
 });
 
