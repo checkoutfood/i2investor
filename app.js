@@ -32,7 +32,7 @@ app.use(cors({ origin: 'http://localhost:4200' })); // Allows cross origin in de
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());
 app.use(passport.initialize());
-app.use('/api', rtsIndex);
+app.use('', rtsIndex);
 
 
 // error handler
