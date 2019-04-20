@@ -7,7 +7,7 @@
     "start": "node index.js",
     "build": "cd client && npm install && ng build --prod --env=prod"
   },
-  "author": "Chocks",
+  "author": "Chocks Subramanian",
   "license": "ISC",
   "dependencies": {
     "@angular/cli": "^7.3.8",
