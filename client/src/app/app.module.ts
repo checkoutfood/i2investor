@@ -16,7 +16,7 @@ import { UserService } from './shared/user.service';
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
-import { DailysellService } from './shared/dailySell.service';
+import { DailysellService } from './shared/dailysell.service';
 
 @NgModule({
   declarations: [
