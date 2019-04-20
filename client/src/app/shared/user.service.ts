@@ -16,7 +16,7 @@ export class UserService {
 
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
 
-  constructor(private http: HttpClient) { }
+  constructor(public http: HttpClient) { }
 
   //HttpMethods
 

@@ -12,8 +12,8 @@ import { HttpClient } from '@angular/common/http';
 export class UserProfileComponent implements OnInit {
   //userDetails;
   dailysellDetails;
-  //constructor(private userService: UserService, private router: Router) { }
-  constructor(private dailysellService: DailysellService, private router: Router) { }
+  //constructor(public userService: UserService, public router: Router) { }
+  constructor(public dailysellService: DailysellService, public router: Router) { }
 
   ngOnInit() {
     // this.userService.getUserProfile().subscribe(

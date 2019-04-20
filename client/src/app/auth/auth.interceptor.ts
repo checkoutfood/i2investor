@@ -8,7 +8,7 @@ import { UserService } from "../shared/user.service";
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
 
-    constructor(private userService : UserService,private router : Router){}
+    constructor(public userService : UserService,public router : Router){}
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
 
