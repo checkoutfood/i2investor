@@ -16,7 +16,10 @@ import { UserService } from './shared/user.service';
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { DailybuyService } from './shared/dailybuy.service';
+import { DailybuyComponent } from './dailybuy/dailybuy.component';
 import { DailysellService } from './shared/dailysell.service';
+import { DailysellComponent } from './dailysell/dailysell.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { DailysellService } from './shared/dailysell.service';
     UserComponent,
     SignUpComponent,
     UserProfileComponent,
+    DailybuyComponent,
+    DailysellComponent,
     SignInComponent
   ],
   imports: [
@@ -36,7 +41,7 @@ import { DailysellService } from './shared/dailysell.service';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService,DailysellService],
+  },AuthGuard,UserService,DailysellService,DailybuyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
