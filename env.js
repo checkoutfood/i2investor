@@ -10,3 +10,5 @@ if (fs.existsSync('./public')) {
   process.env.databaseUri = 'mongodb://localhost:27017/MEANStackDB'; // Databse URI and database name
   process.env.databaseName = 'development database: MEANStackDB'; // Database name
 }
+
+
