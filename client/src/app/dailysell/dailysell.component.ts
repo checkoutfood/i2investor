@@ -29,7 +29,7 @@ export class DailysellComponent implements OnInit {
     //   }
     //  ),
     this.dailysellService.getDailysellProfile().
-    subscribe(res => {
+    subscribe((res: any[]) => {
         console.log("RESPONSE");
         console.log(res);
         console.log("RESPONSE_LENGTH");
