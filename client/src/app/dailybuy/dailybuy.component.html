@@ -1,7 +1,7 @@
 <table align="center" width="75%">
     <thead>
         <tr>
-            <th colspan="3" class="text-center">DAILY SELL SIGNALS</th>
+            <th colspan="3" class="text-center">DAILY BUY SIGNALS</th>
         </tr>
     </thead>
     <tbody>
@@ -11,27 +11,27 @@
             <td><p><b>LATEST BUY SIGNAL</b></p></td>
         </tr>
         <tr>
-            <td>{{dailybuyDetails[0].company}}</td>
+            <td>{{dailybuyDetails[dailybuyDetails_length-1].company}}</td>
             <td>{{dailybuyDetails[0].confidence_level}}</td>
             <td>{{dailybuyDetails[0].lastBuyEvent}}</td>
         </tr>
         <tr>
-            <td>{{dailybuyDetails[0].company}}</td>
+            <td>{{dailybuyDetails[dailybuyDetails_length-2].company}}</td>
             <td>{{dailybuyDetails[0].confidence_level}}</td>
             <td>{{dailybuyDetails[0].lastBuyEvent}}</td>
         </tr>
         <tr>
-                <td>{{dailybuyDetails[0].company}}</td>
+                <td>{{dailybuyDetails[dailybuyDetails_length-3].company}}</td>
                 <td>{{dailybuyDetails[0].confidence_level}}</td>
                 <td>{{dailybuyDetails[0].lastBuyEvent}}</td>
         </tr>
         <tr>
-                <td>{{dailybuyDetails[0].company}}</td>
+                <td>{{dailybuyDetails[dailybuyDetails_length-4].company}}</td>
                 <td>{{dailybuyDetails[0].confidence_level}}</td>
                 <td>{{dailybuyDetails[0].lastBuyEvent}}</td>
         </tr>
         <tr>
-                <td>{{dailybuyDetails[0].company}}</td>
+                <td>{{dailybuyDetails[dailybuyDetails_length-5].company}}</td>
                 <td>{{dailybuyDetails[0].confidence_level}}</td>
                 <td>{{dailybuyDetails[0].lastBuyEvent}}</td>
         </tr>

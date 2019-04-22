@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class DailybuyComponent implements OnInit {
   //userDetails;
   dailybuyDetails;
+  dailybuyDetails_length;
   //constructor(public userService: UserService, public router: Router) { }
   constructor(public dailybuyService: DailybuyService, public router: Router) { }
 
@@ -31,6 +32,9 @@ export class DailybuyComponent implements OnInit {
     subscribe(res => {
         console.log("RESPONSE");
         console.log(res);
+        console.log("RESPONSE_LENGTH");
+        console.log(res.length);
+        this.dailybuyDetails_length=res.length;
         this.dailybuyDetails = res;
       },
       err => { 
